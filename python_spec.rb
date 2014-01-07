@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-describe file('/usr/bin/python') do
+describe file('/usr/local/bin/python') do
   it { should be_file }
   it { should be_executable }
 end
 
-describe file('/usr/bin/pip') do
+describe file('/usr/local/bin/pip') do
   it { should be_file }
   it { should be_executable }
 end
